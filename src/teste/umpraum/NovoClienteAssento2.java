@@ -10,7 +10,6 @@ public class NovoClienteAssento2 {
 
         Assento assento = new Assento("4D");
         Cliente cliente = new Cliente("Maria", assento);
-
         DAO<Cliente> dao = new DAO<>(Cliente.class);
         dao.incluirAtomico(cliente);
     }
